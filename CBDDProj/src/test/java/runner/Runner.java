@@ -7,10 +7,12 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin={"html:target/cucumber_html_report"},
+		plugin={"pretty"},
 		features={"features"},
 		glue={"stepDefinitions"},
-		tags={"@Vijay"}
+		//tags={"@Vijay","~@dev","~@wip","~@ignore"}
+		tags={"@qafox"}
+		
 		
 		)
 public class Runner {
